@@ -1,55 +1,58 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-<title>reddit.tv</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <title>reddit.tv</title>
 
-<link rel="dark stylesheet" href="./tv_dark.css" type="text/css" />
-<link rel="stylesheet" href="./tv.css" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/layout.css" />
+  <link rel="stylesheet" type="text/css" href="css/light.css" title="Daytime" />
+  <link rel="alternate stylesheet" type="text/css" href="css/dark.css" title="Nighttime" />
+  <script type="text/javascript" src="js/styleswitcher.js"></script>
 
-<script src="./js/jquery-1.4.4.min.js" type="text/javascript"></script>
-<script src="./js/jquery.escapify.js" type="text/javascript"></script>
-<script src="./js/jquery.jsonp-2.1.4.min.js" type="text/javascript"></script>
-<script src="./tv.js" type="text/javascript"></script>
+  <script src="./js/jquery-1.4.4.min.js" type="text/javascript"></script>
+  <script src="./js/jquery.escapify.js" type="text/javascript"></script>
+  <script src="./js/jquery.jsonp-2.1.4.min.js" type="text/javascript"></script>
+  <script src="./js/tv.js" type="text/javascript"></script>
 </head>
-<body>
-<div id="content-wrapper">
-  <div id="content">
-    <div id="header">
-      <div id="sitename">reddit.tv</div>
-      <div id="options">
-        <ul id="css" class="right">
-          <li><a href="#" rel="./tv.css">light</a></li>
-          <li><a href="#" rel="./tv_dark.css">dark</a></li>
-        </ul>
 
-        <form class="right">
-          <input type="checkbox" id="auto" checked/>
-          <label for="auto">autoplay/advance</label>
-          <input type="checkbox" id="fill"/>
-          <label for="fill">fill screen</label>
-          <input type="checkbox" id="sfw" checked/>
-          <label for="sfw">sfw</label>
-        </form>
+<body>
+  <div id="content-wrapper">
+    <div id="content">
+      <div id="header">
+        <div id="sitename">reddit.tv</div>
+        <div id="options">
+          <span id="css" class="right">
+            <span id="css-button-dark" class="css-button right" onclick="setActiveStyleSheet('Nighttime'); return false;">&nbsp;</span>
+            <span id="css-button-light" class="css-button right" onclick="setActiveStyleSheet('Daytime'); return false;">&nbsp;</span>
+          </span>
+
+          <form class="right">
+            <input type="checkbox" id="auto" checked/>
+            <label for="auto">autoplay/advance</label>
+            <input type="checkbox" id="fill"/>
+            <label for="fill">fill screen</label>
+            <input type="checkbox" id="sfw" checked/>
+            <label for="sfw">sfw</label>
+          </form>
+        </div>
       </div>
-    </div>
-    <div id="channel-list"></div>
-    <div id="video-display">
-      <div id="video-title"></div>
-      <div id="video-embed"></div>
-      <div id="video-nav">
-        <a id="prev-button" class="nav-button">&lt; PREV</a>
-        <a id="next-button" class="nav-button">NEXT &gt;</a>
-        <div id="vote-button"></div>
+      <div id="channel-list"></div>
+      <div id="video-display">
+        <div id="video-title"></div>
+        <div id="video-embed"></div>
+        <div id="video-nav">
+          <a id="prev-button" class="nav-button">&lt;</a>
+          <a id="next-button" class="nav-button">&gt;</a>
+          <div id="vote-button"></div>
+        </div>
       </div>
+      <div id="footer">keyboard shortcuts: ← ↑ ↓ → spacebar f</div>
     </div>
-    <div id="footer">keyboard shortcuts: ← ↑ ↓ → spacebar f</div>
   </div>
-</div>
-<div id="fill-overlay">
-  <div id="fill-nav">
-    exit fill screen
+  <div id="fill-overlay">
+    <div id="fill-nav">
+      exit fill screen
+    </div>
   </div>
-</div>
 </body>
 </html>

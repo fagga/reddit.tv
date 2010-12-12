@@ -1,0 +1,82 @@
+body {
+    background-color: black;
+}
+
+#video-display {
+    -moz-box-shadow: 5px 5px 5px gray;
+    -webkit-box-shadow: 5px 5px 5px gray;
+    box-shadow: 5px 5px 5px gray;
+    background-color: #e9e9e9;
+}
+
+#video-title {
+    color: #898989;
+    background-color: #e9e9e9;
+}
+
+#video-title a {
+    color: #336699;
+}
+
+#channel-list li {
+    color: #898989;
+}
+
+#channel-list li:hover {
+    background-color: #e9e9e9;
+}
+
+#header {
+    color: #ccc;
+}
+
+#css-button-light {
+    background-color: #e9e9e9;
+    border: 1px solid #898989;
+}
+
+#css-button-light:hover {
+    background-color: #a9a9a9;
+}
+
+#css-button-dark {
+    background-color: #444444;
+    border: 1px solid #a9a9a9;
+}
+
+#css-button-dark:hover {
+    background-color: #666666;
+}
+
+#footer {
+    color: #ccc;
+}
+
+#vote-button {
+    color: #336699;
+}
+
+#channel-list .chan-selected {
+    color: #898989;
+    -moz-box-shadow: 5px 5px 5px gray;
+    -webkit-box-shadow: 5px 5px 5px gray;
+    box-shadow: 5px 5px 5px gray;
+    background-color: #e9e9e9;
+}
+
+#fill-nav {
+    background-color: white;
+}
+
+.nav-button {
+    -moz-box-shadow: 1px 1px 1px black, inset 1px 1px 1px white;
+    -webkit-box-shadow: 1px 1px 1px black, inset 1px 1px 1px white;
+    box-shadow: 1px 1px 1px black, inset 1px 1px 1px white;
+    text-shadow: 0px 1px 1px hsla(0,0%,100%,.7);
+    color: #898989;
+    background-color: #e9e9e9;
+}
+
+a.nav-button:hover {
+    color: black;
+}
