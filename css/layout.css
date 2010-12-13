@@ -20,9 +20,6 @@ body {
 }
 
 #video-display {
-    -moz-box-shadow: 5px 5px 5px gray;
-    -webkit-box-shadow: 5px 5px 5px gray;
-    box-shadow: 5px 5px 5px gray;
     border-radius: 15px;
     -moz-border-radius: 15px;
     width: 640px;
@@ -79,8 +76,8 @@ body {
 #sitename {
     font-weight: bold;
     font-size: x-large;
+    text-decoration: none;
 }
-
 
 #options {
     position: absolute;
@@ -93,8 +90,8 @@ body {
     cursor: pointer;
     width: 1.3em;
     font-size: x-small;
-    border-radius: 4px;
-    -moz-border-radius: 3px;
+    border-radius: 0.7em;
+    -moz-border-radius: 0.7em;
     margin: 0 0 0 5px;
 }
 
@@ -152,15 +149,15 @@ form label {
 }
 
 .nav-button {
+    width: 1em;
     text-align: center;
     margin-bottom: 15px;
-    padding: 6px 16px;
-    border-radius: 10px;
-    -moz-border-radius: 10px;
+    padding: 0.2em 0.5em;
+    border-radius: 0.7em;
+    -moz-border-radius: 0.7em;
 }
 
 a.nav-button:hover {
-    padding: 5px 15px;
     text-decoration: none;
 }
 
