@@ -82,7 +82,11 @@ body {
 #options {
     position: absolute;
     bottom: 3px;
-    right: 0;
+    right: 15px;
+}
+
+#options form span {
+    margin: 0 0 0 20px;
 }
 
 .css-button {
@@ -96,7 +100,7 @@ body {
 }
 
 #css {
-    margin: 0 0 0 15px;
+    margin: 0 0 0 20px;
     padding: 0;
 }
 
